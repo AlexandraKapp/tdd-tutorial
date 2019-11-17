@@ -113,9 +113,25 @@ get covered percentage:
 
         pytest --cov=my_greetings tests/
 
+### See which lines in your code are not covered:
+
+
+*Directly in source code*
+
+- Install VSCode Plugin "Coverage Gutters"
+- get annotations, with xml:
+
+        pytest --cov=my_greetings tests/ --cov-report xml
+
+- open source file and "Display Coverage"
+
+*Alternative: seperate annotated file*
+
 get annotations, which files are covered (for direct view in file):
 
         pytest --cov=my_greetings tests/ --cov-report annotate:cov_annotate
+
+*Alternative: HTML in Browser*
 
 get annotations, which files are covered (for html output to view in browser):
 
