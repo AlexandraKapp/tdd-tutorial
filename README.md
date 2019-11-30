@@ -89,10 +89,14 @@ assert isinstance("Hello", str) # successful assertion
 2. As CorrelAid becomes more international, we want to extend the greet function, so we can greet in all languages, where CorrelAid is represented (German, English, Dutch, French). The greet function should therefore take the language as input and return the proper greeting. If no language is specified, greet in English.
 
 #### Mocking:
+First download the package for Mocking:
+
+        conda install Mck
 
 *Mock a class*
 
-    A seperate "Person" class represents CorrelAid members. The class has instance the instance variables "nationality" and "firstname". 
+A seperate "Person" class represents CorrelAid members. The class has instance the instance variables "nationality" and "firstname". 
+
 3. Mock the class "Person" and use the mocked instance as input for your greet function. Return the language of the greeting according to the Persons nationality.
 4. To personalize the greeting even more, we also want to include the name of the person to be greeted. If no name is specified, greet without a name.
 
